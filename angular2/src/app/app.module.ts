@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {JeuService} from './jeu.service';
+import { JeuDetailsComponent } from './jeu-details/jeu-details.component';
 
 @NgModule({
   declarations: [
-      AppComponent
+      AppComponent,
+      JeuDetailsComponent
   ],
   imports: [
     BrowserModule,
