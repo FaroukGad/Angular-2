@@ -9,8 +9,12 @@ import { JeuDetailsComponent } from './jeu-details/jeu-details.component';
 
 @NgModule({
   declarations: [
+<<<<<<< HEAD
       AppComponent,
       JeuDetailsComponent
+=======
+    AppComponent
+>>>>>>> 2c9657e9f5234274462734404632921ba4e616c7
   ],
   imports: [
     BrowserModule,
