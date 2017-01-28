@@ -8,15 +8,20 @@ import {JeuService} from '../jeu.service';
   styleUrls: ['./jeu-details.component.css']
 })
 export class JeuDetailsComponent implements OnInit {
-    games: any;
-    genres: any;
+    games;
+    genres;
 
 
-    constructor(private game: JeuService, private genre: JeuService) { }
+    constructor(private jeuService: JeuService) { }
 
   ngOnInit() {
-      this.games = this.game.getgames();
-      this.genres = this.genre.getgenres();
+      this.games = this.jeuService.getgames();
+      this.genres = this.jeuService.getgenres();
+    }
+
+  getGenreNameWithGame(game) {
+      let result = game.genres.map(id => this.genres.find(genre => genre.id == id).name);
+      return result.join(", ");
   }
 
 }

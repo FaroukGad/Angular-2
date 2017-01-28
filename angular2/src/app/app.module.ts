@@ -6,15 +6,19 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {JeuService} from './jeu.service';
 import { JeuDetailsComponent } from './jeu-details/jeu-details.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BiblioComponent } from './biblio/biblio.component';
 
 @NgModule({
   declarations: [
-<<<<<<< HEAD
       AppComponent,
-      JeuDetailsComponent
-=======
-    AppComponent
->>>>>>> 2c9657e9f5234274462734404632921ba4e616c7
+      JeuDetailsComponent,
+      AppComponent,
+      HeaderComponent,
+      FooterComponent,
+      BiblioComponent
+
   ],
   imports: [
     BrowserModule,
