@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {JeuService} from '../jeu.service';
 
 @Component({
+  moduleId: 'moduleId',
   selector: 'app-biblio',
   templateUrl: './biblio.component.html',
   styleUrls: ['./biblio.component.css']
