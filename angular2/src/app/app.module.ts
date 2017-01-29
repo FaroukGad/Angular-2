@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 import {JeuService} from './jeu.service';
@@ -23,7 +25,8 @@ import { BiblioComponent } from './biblio/biblio.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+      HttpModule,
+    RouterModule.forRoot(ROUTES),
   ],
   providers: [JeuService],
   bootstrap: [AppComponent]

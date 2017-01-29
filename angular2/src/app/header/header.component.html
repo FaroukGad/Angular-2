@@ -12,9 +12,8 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Logo</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="app/jeu-details/jeu-details.component.html">Biblioteque</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a [routerLink]="['/biblio']">Biblioteque</a></li>
+        <li><a [routerLink]="['/games/:gameId']">Jeu</a></li>
       </ul>
     </div>
   </nav>
