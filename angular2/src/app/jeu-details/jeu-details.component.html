@@ -1,10 +1,9 @@
 
-<div *ngFor="let cat of games" style=" margin-top: 10px; text-align: center;">
-    <img src="{{cat ['cover']['url']}}">
-    <h3 > {{ cat.name }} </h3>
-    <p> Genre : {{ getGenreNameWithGame(cat)}} </p>
-    <p> Summary : {{ cat.summary}} </p>
-
+<div *ngFor="let test of games">   
+     <img src="{{test ['cover']['url']}}">
+<h1 class="text-center" style="text-decoration: underline;">{{test.name}}</h1>    
+<p> Summary : {{test.summary}} </p>
+    
 
 </div>
 

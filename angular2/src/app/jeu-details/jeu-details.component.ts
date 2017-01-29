@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 import {JeuService} from '../jeu.service';
 
 @Component({
@@ -8,20 +9,23 @@ import {JeuService} from '../jeu.service';
   styleUrls: ['./jeu-details.component.css']
 })
 export class JeuDetailsComponent implements OnInit {
-    games;
-    genres;
+    games: any;
+    id: any;
+    idFinal: any;
+    test: any;
 
 
-    constructor(private jeuService: JeuService) { }
+    constructor(private jeuService: JeuService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-      this.games = this.jeuService.getgames();
-      this.genres = this.jeuService.getgenres();
+        this.id = this.route.snapshot.params['gameId'];
+        this.games = this.jeuService.getgames();
+        this.idFinal = this.id - 1;
+        this.test = this.games[this.idFinal];
+
     }
 
-  getGenreNameWithGame(game) {
-      let result = game.genres.map(id => this.genres.find(genre => genre.id == id).name);
-      return result.join(", ");
-  }
+
 
 }
+

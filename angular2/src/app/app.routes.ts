@@ -6,3 +6,6 @@ export const ROUTES: Routes = [
   { path: 'biblio', component: BiblioComponent },
   { path: 'games/:gameId', component: JeuDetailsComponent }
 ];
+
+
+
