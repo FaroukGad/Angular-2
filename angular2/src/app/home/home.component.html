@@ -1,0 +1,14 @@
+<h1 style=" margin-top:20px; text-align:center;">Bienvenue sur votre plateforme steam</h1>
+
+<p style=" margin-top:20px; text-align:center;">Venez découvrir une large bibliothèque de jeux sur notre plateforme, et ajouter vos jeux préférés à vos favoris pour toujours y avoir accès rapidement.</p>
+<hr>
+
+<h3 style=" margin-top:20px; text-align:center;">Top 3 des jeux du moment !</h3>
+
+
+<div *ngFor="let cat of games | slice:0:3" style=" margin-top:20px; text-align:center;">
+  <h3>
+    <a [routerLink]="['/games/:gameId']"> {{ cat.name }}</a>
+  </h3>
+</div>
+<hr>

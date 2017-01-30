@@ -11,6 +11,7 @@ import { JeuDetailsComponent } from './jeu-details/jeu-details.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BiblioComponent } from './biblio/biblio.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BiblioComponent } from './biblio/biblio.component';
       AppComponent,
       HeaderComponent,
       FooterComponent,
-      BiblioComponent
+      BiblioComponent,
+      HomeComponent
 
   ],
   imports: [

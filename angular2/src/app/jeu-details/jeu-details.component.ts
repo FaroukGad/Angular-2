@@ -11,8 +11,7 @@ import {JeuService} from '../jeu.service';
 export class JeuDetailsComponent implements OnInit {
     games: any;
     id: any;
-    idFinal: any;
-    test: any;
+
 
 
     constructor(private jeuService: JeuService, private route: ActivatedRoute) { }
@@ -20,8 +19,6 @@ export class JeuDetailsComponent implements OnInit {
   ngOnInit() {
         this.id = this.route.snapshot.params['gameId'];
         this.games = this.jeuService.getgames();
-        this.idFinal = this.id - 1;
-        this.test = this.games[this.idFinal];
 
     }
 
